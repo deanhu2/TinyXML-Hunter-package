@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0)
-project (Tiny_XML DESCRIPTION "Cmake for tinyxml as a hunter package")
+project (TinyXML DESCRIPTION "Cmake for tinyxml as a hunter package")
 
 
 
@@ -18,12 +18,12 @@ set(Tiny_XML_Header_Files
 )
 
 
-include_directories(Tiny_XML 
+include_directories(TinyXML 
 	PRIVATE src 
 	PUBLIC "$<BUILD_INTERFACE:${CMAKE_CURRENT_LIST_DIR}>"
 )
 
-add_library(Tiny_XML SHARED
+add_library(TinyXML SHARED
     ${Tiny_XML_Header_Files}
     ${Tiny_XML_SRC}
 )
@@ -44,7 +44,7 @@ set(namespace "${PROJECT_NAME}::")
 #####################
 
 install(
-    TARGETS Tiny_XML
+    TARGETS TinyXML
     EXPORT "${TARGETS_EXPORT_NAME}"
     LIBRARY DESTINATION "lib"
     ARCHIVE DESTINATION "lib"
