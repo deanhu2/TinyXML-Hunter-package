@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.0)
 project (Tiny_XML DESCRIPTION "Cmake for tinyxml as a hunter package")
-set(CMAKE_BUILD_TYPE Release)
+
 
 
 SET(Tiny_XML_SRC
