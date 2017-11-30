@@ -70,9 +70,16 @@ install(
 )
 
 install(
+    FILES ${Tiny_XML_Header_Files}
+    DESTINATION "${include_install_dir}"
+)
+
+install(
     EXPORT "${TARGETS_EXPORT_NAME}"
     NAMESPACE "${namespace}"
     DESTINATION "${config_install_dir}"
 )
+
+
 
 
